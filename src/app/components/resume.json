@@ -1,0 +1,143 @@
+{
+    "personal_info": {
+      "name": "Jessie Chonthicha",
+      "title": "Software Developer",
+      "location": "Calgary, AB, Canada",
+      "phone": "(+1)403-397-4942",
+      "email": "chonthicha.pc@gmail.com",
+      "linkedin": "LINKEDIN_URL",
+      "github": "GITHUB_URL"
+    },
+    "objective": "Passionate and detail-oriented aspiring Front-End Developer with a strong foundation in HTML, CSS, and JavaScript. Eager to join Sustain Pod as a Front-End Developer Intern to leverage my web development skills in designing and building Shopify stores, optimizing for SEO, and supporting e-commerce initiatives while contributing to sustainable business practices.",
+    "education": [
+      {
+        "degree": "Diploma in Software Development",
+        "institution": "The Southern Alberta Institute of Technology (SAIT), Canada",
+        "years": "2023 - 2024"
+      },
+      {
+        "degree": "BEng. in Industrial Engineering",
+        "institution": "King Mongkut's Institute of Technology Ladkrabang, Thailand",
+        "years": "20014 – 2019"
+      }
+    ],
+    "skills": {
+      "front_end_development": ["HTML,CSS", "JavaScript", "TypeScript"],
+      "web_technologies": ["Responsive Web Design", "Web Accessibility", "Basic Liquid Code"],
+      "shopify": ["Familiar with Shopify themes and structure", "Eager to deepen Shopify knowledge"],
+      "seo": ["Basic understanding of SEO principles"],
+      "development_practices": ["Agile methodologies", "Software"],
+      "tools_and_technologies": ["GitHub", "Figma", "IntelliJ IDEA", "Basic knowledge of version control"],
+      "soft_skills": ["Strong attention to detail", "Excellent communication skills", "Collaborative mindset"],
+      "additional_skills": ["React (basic)", "Python (basic)", "Basic knowledge of web analytics tools"]
+    },
+    "projects": [
+      {
+        "name": "Receiptify",
+        "description": "Web App for Receipt Management",
+        "technologies": ["React", "Firebase", "Algolia API"],
+        "features": [
+          "Developed a web application for storing and managing receipts with OCR capabilities.",
+          "Implemented features for uploading receipts, extracting data, and searching with Algolia API."
+        ],
+        "github_repository": "RECEIPTIFY_GITHUB_URL"
+      },
+      {
+        "name": "ABClass7",
+        "description": "Single-Page React Website for Alberta Driving Class 7 Practice",
+        "technologies": ["React", "Stripe"],
+        "features": [
+          "Created a website for Alberta Driving Class 7 practice with features for donations and feedback."
+        ],
+        "github_repository": "ABCLASS7_GITHUB_URL"
+      },
+      {
+        "name": "CatWeather",
+        "description": "Weather Forecast App with Adorable Kitten Graphics",
+        "technologies": ["React Native", "OpenWeatherMap API"],
+        "features": [
+          "Developed a mobile app for weather forecasts with a playful user interface."
+        ],
+        "video_demo": "CATWEATHER_VIDEO_DEMO_URL",
+        "github_repository": "CATWEATHER_GITHUB_URL"
+      },
+      {
+        "name": "Diary",
+        "description": "Mobile App for Daily Diary Entries",
+        "technologies": ["React Native", "Firebase"],
+        "features": [
+          "Designed a mobile app for users to create and manage daily diary entries with cloud storage."
+        ],
+        "github_repository": "DIARY_GITHUB_URL"
+      }
+    ],
+    "experience": [
+      {
+        "role": "Freelance Contract",
+        "duration": "Feb 2024 - Apr 2024",
+        "responsibilities": [
+          "Styled components using styled-components and added new features for a React Native mobile app."
+        ]
+      },
+      {
+        "role": "Production Engineer",
+        "company": "Toyota Motor Thailand Co.",
+        "duration": "Jan 2021 - Apr 2022",
+        "responsibilities": [
+          "Improved production line capacity and monitored KPIs, implementing Toyota Production System principles."
+        ]
+      },
+      {
+        "role": "New Model Project Engineer",
+        "company": "Toyota Motor Thailand Co.",
+        "duration": "Apr 2019 - Dec 2020",
+        "responsibilities": [
+          "Led new model projects, ensuring timely delivery and budget compliance.",
+          "Prepared project status reports and recommended actions based on data analysis."
+        ]
+      }
+    ],
+    "professional_development": [
+      {
+        "description": "Participating in online courses and webinars on cloud technologies, containerization, and agile methodologies.",
+        "status": "Ongoing"
+      }
+    ],
+    "certifications_and_additional_training": [
+      {
+        "certification": "AWS Certified Solutions Architect – Associate",
+        "status": "In Progress"
+      },
+      {
+        "course": "Microsoft Certified: Azure Fundamentals",
+        "status": "In Progress"
+      },
+      {
+        "course": "Basic Shopify Theme Development",
+        "platform": "Online Course Platform",
+        "status": "In Progress"
+      }
+    ],
+    "additional_information": [
+      {
+        "interest": "Interest in DevOps",
+        "description": "Passionate about contributing to environmentally friendly and innovative projects."
+      },
+      {
+        "eagerness_to_learn": "Motivated to expand my skills in Shopify, Liquid code, and front-end web development techniques."
+      }
+    ],
+    "about_me": {
+      "introduction": "Hi there! I'm Jessie Chonthicha, a spirited and enthusiastic front-end developer based in Calgary, AB, Canada. I thrive on bringing creativity to life through code and am always eager to learn and grow in the dynamic world of web development. With a solid foundation in HTML, CSS, and JavaScript, I'm passionate about crafting beautiful and responsive web experiences.",
+      "hobbies": [
+        "exploring the great outdoors",
+        "hiking",
+        "indoor rock climbing",
+        "rafting",
+        "baking",
+        "riding my CBR 125cc motorcycle"
+      ],
+      "personality": "I believe in living life to the fullest, embracing new challenges, and connecting with people from all walks of life. My extroverted nature means I'm always up for a good conversation, whether it's about the latest in web development or the best hiking trails in the area."
+    }
+  }
+  
