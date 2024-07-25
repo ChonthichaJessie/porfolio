@@ -17,7 +17,7 @@ const HomePage = () => {
         />
       </ProfileSection>
       <h6>Hi</h6>
-      <p>I&apos;m Jessie</p>
+      <h6>I&apos;m Jessie</h6>
       <p>a Frontend Developer</p>
       <Introduction>
         <IntroText>{aboutMe.about_me.introduction}</IntroText>
