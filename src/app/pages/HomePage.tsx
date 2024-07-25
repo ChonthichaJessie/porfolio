@@ -10,19 +10,17 @@ import githubLogo from "../assets/githubLogo.png";
 const HomePage = () => {
   return (
     <Wrapper>
-      <ImageWrapper>
-        <Image src={nameTitle} alt="title" />
-      </ImageWrapper>
       <ProfileSection>
         <ProfilePicture
           src="https://avatars.githubusercontent.com/u/124099512?v=4"
           alt="profile picture"
         />
       </ProfileSection>
+      <h6>Hi</h6>
+      <p>I&apos;m Jessie</p>
+      <p>a Frontend Developer</p>
       <Introduction>
         <IntroText>{aboutMe.about_me.introduction}</IntroText>
-        <IntroText>{aboutMe.about_me.hobbies}</IntroText>
-        <IntroText>{aboutMe.about_me.personality}</IntroText>
       </Introduction>
       <IconsWrapper>
         <IconLink href="https://github.com/ChonthichaJessie" target="_blank">
