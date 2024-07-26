@@ -16,7 +16,7 @@ const HomePage = () => {
           alt="profile picture"
         />
       </ProfileSection>
-      <h6>Hi</h6>
+      <h6>Hello</h6>
       <h6>I&apos;m Jessie</h6>
       <h6>a Frontend Developer</h6>
       <Introduction>
