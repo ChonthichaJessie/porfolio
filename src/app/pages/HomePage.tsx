@@ -18,7 +18,7 @@ const HomePage = () => {
       </ProfileSection>
       <h6>Hi</h6>
       <h6>I&apos;m Jessie</h6>
-      <p>a Frontend Developer</p>
+      <h6>a Frontend Developer</h6>
       <Introduction>
         <IntroText>{aboutMe.about_me.introduction}</IntroText>
       </Introduction>
