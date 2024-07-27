@@ -165,7 +165,8 @@ const FormWrapper = styled.div`
 const FormTitle = styled.h2`
   font-size: 1.5rem;
   font-family: "Courier New", Courier, monospace;
-  color: #333333;
+  font-weight: 500;
+  color: #ff69b4;
   text-align: center;
   margin-bottom: 20px;
 `;

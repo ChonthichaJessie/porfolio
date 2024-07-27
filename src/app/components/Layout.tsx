@@ -4,24 +4,13 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 const pageVariants = {
-  initial: {
-    opacity: 0,
-    // x: "-100vw",
-  },
+  initial: {},
   in: {
     opacity: 1,
-    // x: 0,
   },
-  // out: {
-  //   opacity: 0,
-  //   x: "100vw",
-  // },
 };
 
 const pageTransition = {
-  // type: "tween",
-  // ease: "anticipate",
-  // duration: 0.5,
   duration: 2,
 };
 
@@ -29,7 +18,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
 
   return (
-    <AnimatePresence mode='wait'>
+    <AnimatePresence mode="wait">
       <motion.div
         key={pathname}
         initial="initial"

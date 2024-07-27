@@ -9,6 +9,7 @@ const ResumePage = () => {
   return (
     <Wrapper>
       <MiddleSection>
+        <PinkTitle>My Resume</PinkTitle>
         <ContentWrapper>
           <Section>
             <SectionTitle>Objective</SectionTitle>
@@ -112,6 +113,13 @@ const ResumePage = () => {
 };
 
 export default ResumePage;
+
+const PinkTitle = styled.h6`
+  color: #ff69b4;
+  font-weight: 800;
+  font-size: 2.5rem;
+  font-family: "Courier New", Courier, monospace;
+`;
 
 const Footer = styled.div`
   display: flex;
