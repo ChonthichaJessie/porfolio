@@ -1,19 +1,17 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import aboutMe from "./components/aboutMe.json";
 import linkedinLogo from "./assets/linkedinLogo.png";
 import githubLogo from "./assets/githubLogo.png";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
-import MainIcon from "./components/MainIcon";
 import { motion } from "framer-motion";
+import InitialIcon from "./components/InitialIcon";
+import SubIcons from "./components/SubIcons";
 
 const MainPage = () => {
   return (
     <Wrapper>
-      <LeftSection />
       <MiddleSection>
         <motion.div
           initial="hidden"
@@ -61,41 +59,38 @@ const MainPage = () => {
           </IconLink>
         </IconsWrapper>
       </MiddleSection>
-      <RightSection>
-        <StyledLink href="/pages/resume">
-          <MainIcon fortawesomeTitle={faFile} color="pink" />
-        </StyledLink>
-      </RightSection>
+      <Footer>
+        <InitialIconWrapper>
+          <InitialIcon />
+        </InitialIconWrapper>
+
+        <SubIconsWrapper>
+          <SubIcons />
+        </SubIconsWrapper>
+      </Footer>
     </Wrapper>
   );
 };
 
 export default MainPage;
 
-const StyledLink = styled(Link)`
-  opacity: 0.5;
-  transition: opacity 0.3s;
-
-  &:hover {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-`;
-
-const LeftSection = styled.div`
+const Footer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 15%;
+  margin-top: 20px;
+`;
+const InitialIconWrapper = styled.div`
+position: fixed;
+bottom: 5%;
+right: 5%;
 `;
 
-const RightSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
+const SubIconsWrapper = styled.div`
+  position: fixed;
+  bottom: 2%;
+  right: 5%;
 `;
 
 const MiddleSection = styled.div`
@@ -152,6 +147,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: #ffffff;
   min-height: 100vh;
 `;
@@ -185,21 +181,3 @@ const IntroText = styled.p`
   line-height: 1.6;
   margin: 10px 0;
 `;
-
-// import React from 'react';
-// import Link from 'next/link';
-
-// const MainPage = () => {
-//   return (
-//     <div>
-//       <h1>Main Page</h1>
-//       <nav>
-//         <Link href="/pages/home">Go to Home</Link>
-//         <Link href="/pages/resume">Go to Resume</Link>
-//         <Link href="/pages/contact">Go to Contact</Link>
-//       </nav>
-//     </div>
-//   );
-// };
-
-// export default MainPage;

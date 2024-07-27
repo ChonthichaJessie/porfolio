@@ -2,6 +2,8 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
+import InitialIcon from "../../components/InitialIcon";
+import SubIcons from "../../components/SubIcons";
 
 // Interface for form state
 interface FormState {
@@ -108,18 +110,46 @@ const ContactPage: React.FC = () => {
           <SubmitButton type="submit">Send Message</SubmitButton>
         </Form>
       </FormWrapper>
+      <Footer>
+        <InitialIconWrapper>
+          <InitialIcon />
+        </InitialIconWrapper>
+
+        <SubIconsWrapper>
+          <SubIcons />
+        </SubIconsWrapper>
+      </Footer>
     </Wrapper>
   );
 };
 
 export default ContactPage;
 
+const Footer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+`;
+
+const SubIconsWrapper = styled.div`
+  position: fixed;
+  bottom: 2%;
+  right: 5%;
+`;
+const InitialIconWrapper = styled.div`
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+`;
+
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: 20px;
-  background-color: #f8f9fa;
+  justify-content: center;
+  background-color: #ffffff;
   min-height: 100vh;
 `;
 
@@ -182,7 +212,7 @@ const Error = styled.span`
 
 const SubmitButton = styled.button`
   padding: 10px 20px;
-  background-color: #0070f3;
+  background-color: #f6c3cc;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -191,6 +221,6 @@ const SubmitButton = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #005bb5;
+    background-color: #ee74b2;
   }
 `;

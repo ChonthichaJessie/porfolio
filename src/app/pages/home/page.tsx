@@ -12,65 +12,72 @@ import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
-    <Wrapper>
-      <LeftSection />
-      <MiddleSection>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: {
-              scale: 0.8,
-              opacity: 0.5,
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              transition: {
-                delay: 0.4,
+    <div>
+      <Wrapper>
+        <LeftSection />
+        <MiddleSection>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                scale: 0.8,
+                opacity: 0.5,
               },
-            },
-          }}
-        >
-          <TopSection>
-            <Greetings>
-              <GreyTitle>Hello</GreyTitle>
-              <PinkTitle>I&apos;m Jessie Ch.</PinkTitle>
-              <GreyTitle>a Frontend Developer</GreyTitle>
-            </Greetings>
-            <ProfileSection>
-              <ProfilePicture
-                src="https://media.licdn.com/dms/image/D5603AQFwWIrmVRibvw/profile-displayphoto-shrink_800_800/0/1676305948458?e=1727308800&v=beta&t=0kWArMYbJi7SEGLYsinypOVsaOu443Vn9y878jfTAdY"
-                alt="profile picture"
-              />
-            </ProfileSection>
-          </TopSection>
-        </motion.div>
-        <Introduction>
-          <IntroText>{aboutMe.about_me.introduction}</IntroText>
-        </Introduction>
-        <IconsWrapper>
-          <IconLink href="https://github.com/ChonthichaJessie" target="_blank">
-            <Image src={githubLogo} alt="github" width={50} height={50} />
-          </IconLink>
-          <IconLink
-            href="https://www.linkedin.com/in/chonthicha-paingam/"
-            target="_blank"
+              visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  delay: 0.4,
+                },
+              },
+            }}
           >
-            <Image src={linkedinLogo} alt="linkedin" width={50} height={50} />
-          </IconLink>
-        </IconsWrapper>
-      </MiddleSection>
-      <RightSection>
-        <StyledLink href="/pages/resume/page">
-          <MainIcon fortawesomeTitle={faFile} color="pink" />
-        </StyledLink>
-      </RightSection>
-    </Wrapper>
+            <TopSection>
+              <Greetings>
+                <GreyTitle>Hello</GreyTitle>
+                <PinkTitle>I&apos;m Jessie Ch.</PinkTitle>
+                <GreyTitle>a Frontend Developer</GreyTitle>
+              </Greetings>
+              <ProfileSection>
+                <ProfilePicture
+                  src="https://media.licdn.com/dms/image/D5603AQFwWIrmVRibvw/profile-displayphoto-shrink_800_800/0/1676305948458?e=1727308800&v=beta&t=0kWArMYbJi7SEGLYsinypOVsaOu443Vn9y878jfTAdY"
+                  alt="profile picture"
+                />
+              </ProfileSection>
+            </TopSection>
+          </motion.div>
+          <Introduction>
+            <IntroText>{aboutMe.about_me.introduction}</IntroText>
+          </Introduction>
+          <IconsWrapper>
+            <IconLink
+              href="https://github.com/ChonthichaJessie"
+              target="_blank"
+            >
+              <Image src={githubLogo} alt="github" width={50} height={50} />
+            </IconLink>
+            <IconLink
+              href="https://www.linkedin.com/in/chonthicha-paingam/"
+              target="_blank"
+            >
+              <Image src={linkedinLogo} alt="linkedin" width={50} height={50} />
+            </IconLink>
+          </IconsWrapper>
+        </MiddleSection>
+        <RightSection>
+          <StyledLink href="/pages/resume/page">
+            <MainIcon fortawesomeTitle={faFile} color="pink" />
+          </StyledLink>
+        </RightSection>
+      </Wrapper>
+      
+    </div>
   );
 };
 
 export default HomePage;
+
 
 const StyledLink = styled(Link)`
   opacity: 0.5;
@@ -148,14 +155,6 @@ const IconLink = styled.a`
   }
 `;
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #ffffff;
-  min-height: 100vh;
-`;
-
 const ProfileSection = styled.div`
   display: flex;
   justify-content: center;
@@ -184,4 +183,12 @@ const IntroText = styled.p`
   color: #333333;
   line-height: 1.6;
   margin: 10px 0;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  min-height: 100vh;
 `;

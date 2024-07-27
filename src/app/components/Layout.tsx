@@ -6,22 +6,23 @@ import React from "react";
 const pageVariants = {
   initial: {
     opacity: 0,
-    x: "-100vw",
+    // x: "-100vw",
   },
   in: {
     opacity: 1,
-    x: 0,
+    // x: 0,
   },
-  out: {
-    opacity: 0,
-    x: "100vw",
-  },
+  // out: {
+  //   opacity: 0,
+  //   x: "100vw",
+  // },
 };
 
 const pageTransition = {
-  type: "tween",
-  ease: "anticipate",
-  duration: 0.5,
+  // type: "tween",
+  // ease: "anticipate",
+  // duration: 0.5,
+  duration: 2,
 };
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -36,6 +37,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         exit="out"
         variants={pageVariants}
         transition={pageTransition}
+        style={{ position: "relative" }}
       >
         {children}
       </motion.div>
