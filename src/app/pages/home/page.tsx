@@ -3,14 +3,14 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import aboutMe from "./components/aboutMe.json";
-import linkedinLogo from "./assets/linkedinLogo.png";
-import githubLogo from "./assets/githubLogo.png";
+import aboutMe from "../../components/aboutMe.json";
+import linkedinLogo from "../../assets/linkedinLogo.png";
+import githubLogo from "../../assets/githubLogo.png";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
-import MainIcon from "./components/MainIcon";
+import MainIcon from "../../components/MainIcon";
 import { motion } from "framer-motion";
 
-const MainPage = () => {
+const HomePage = () => {
   return (
     <Wrapper>
       <LeftSection />
@@ -62,7 +62,7 @@ const MainPage = () => {
         </IconsWrapper>
       </MiddleSection>
       <RightSection>
-        <StyledLink href="/pages/resume">
+        <StyledLink href="/pages/resume/page">
           <MainIcon fortawesomeTitle={faFile} color="pink" />
         </StyledLink>
       </RightSection>
@@ -70,7 +70,7 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default HomePage;
 
 const StyledLink = styled(Link)`
   opacity: 0.5;
@@ -185,21 +185,3 @@ const IntroText = styled.p`
   line-height: 1.6;
   margin: 10px 0;
 `;
-
-// import React from 'react';
-// import Link from 'next/link';
-
-// const MainPage = () => {
-//   return (
-//     <div>
-//       <h1>Main Page</h1>
-//       <nav>
-//         <Link href="/pages/home">Go to Home</Link>
-//         <Link href="/pages/resume">Go to Resume</Link>
-//         <Link href="/pages/contact">Go to Contact</Link>
-//       </nav>
-//     </div>
-//   );
-// };
-
-// export default MainPage;

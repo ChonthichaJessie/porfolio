@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
-import resumeData from "../components/resume.json";
+import resumeData from "../../components/resume.json";
 
 const ResumePage = () => {
   return (
@@ -91,9 +91,9 @@ const ResumePage = () => {
           ))}
         </Section>
       </ContentWrapper>
-      <DownloadResumeLink href="/resume.pdf" download>
-          Download My Resume in PDF
-        </DownloadResumeLink>
+      <DownloadResumeLink href="/JessieCh.pdf" download>
+        Download My Resume in PDF
+      </DownloadResumeLink>
     </Wrapper>
   );
 };
@@ -104,16 +104,16 @@ const DownloadResumeLink = styled.a`
   display: inline-block;
   margin: 20px 0;
   padding: 10px 20px;
-  background-color: #0070f3;
+  background-color: #F6C3CC;
   color: #ffffff;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #005bb5;
+    background-color: #EE74B2;
   }
 `;
 
